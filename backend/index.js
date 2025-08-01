@@ -18,6 +18,9 @@ app.use('/api/auth', authRoutes);
 const studentRoutes = require('./routes/student');
 app.use('/api/students', studentRoutes);
 
+const questionRoutes = require('./routes/question');
+app.use('/api/questions', questionRoutes);
+
 // Simple root route
 app.get('/', (req, res) => {
   res.send('Student Exam App Backend is running.');
