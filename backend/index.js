@@ -19,6 +19,14 @@ const studentRoutes = require('./routes/student');
 app.use('/api/students', studentRoutes);
 
 const questionRoutes = require('./routes/question');
+// Exam routes
+const examRoutes = require('./routes/exam');
+app.use('/api/exams', examRoutes);
+
+// Result routes
+const resultRoutes = require('./routes/result');
+app.use('/api/results', resultRoutes);
+
 app.use('/api/questions', questionRoutes);
 
 // Simple root route
